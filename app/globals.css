@@ -10,7 +10,7 @@
     /* f */
     --foreground: #171717;
   /* m */
-  --max-width: 960px;
+  --max-width: calc(100vw - 200px);
   --max-width-content: calc(var(--max-width) - calc(var(--size-medium) * 2));
   /* s */
   --size-ultra-large: 64px;

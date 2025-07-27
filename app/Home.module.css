@@ -44,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     max-width: var(--max-width-content);
     margin: 0 var(--size-medium);
     gap: 1rem;
@@ -155,16 +155,18 @@
 
 .info {
     background-color: white;
-    padding-top: var(--size-medium);
-    padding-bottom: var(--size-medium);
+    padding-top: var(--size-extra-large);
+    padding-bottom: var(--size-extra-large);
     display: flex;
     justify-content: center;
 }
 
 .infoContainer {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: var(--max-width-content);
+    width: var(--max-width-content);
     gap: 2rem;
 }
 
@@ -200,7 +202,19 @@
     background-color: var(--background-color-highlight);
 }
 
-@media (max-width: var(--max-width)) {
+.footer {
+    border-top: var(--border);
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--size-extra-large);
+    padding-bottom: var(--size-extra-large);
+}
+
+@media (max-width: 1100px) {
 
     .businessInfo>b,
     .customerInfo>b,
@@ -220,18 +234,6 @@
         margin-left: var(--size-medium);
         margin-right: var(--size-medium);
     }
-}
-
-.footer {
-    border-top: var(--border);
-}
-
-.inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: var(--size-extra-large);
-    padding-bottom: var(--size-extra-large);
 }
 
 @media (max-width: 576px) {
